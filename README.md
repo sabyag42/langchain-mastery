@@ -67,4 +67,4 @@ uv run python src/graph.py
 ## Connect
 
 - GitHub: [github.com/sabyag42](https://github.com/sabyag42)
-- LinkedIn: [Add your LinkedIn URL here]
+- LinkedIn: https://www.linkedin.com/in/sabyasachi-ghosh-sg/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B3Tm2qg%2BxQyiqAg4v743DqQ%3D%3D
