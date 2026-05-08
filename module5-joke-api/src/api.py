@@ -60,12 +60,16 @@ async def get_joke(request: JokeRequest):
             "score": 0,
             "attempts": 0
         })
+
+        # Use .get() with defaults — safe against missing keys
+        # in any LangGraph version
         return JokeResponse(
-            joke=final_state["joke"],
-            rating=final_state["rating"],
-            score=final_state["score"],
-            attempts=final_state["attempts"]
+            joke=final_state.get("joke", ""),
+            rating=final_state.get("rating", ""),
+            score=final_state.get("score", 0),
+            attempts=final_state.get("attempts", 0)
         )
+
     except Exception as e:
         raise HTTPException(
             status_code=500,
